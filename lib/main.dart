@@ -74,14 +74,14 @@ class Student {
 // ------------------- Attendance Provider -------------------
 class AttendanceProvider extends ChangeNotifier {
   final List<Student> _students = [
-    Student(id: '1', name: 'Alice Johnson', isPresent: true),
-    Student(id: '2', name: 'Bob Smith', isPresent: false),
-    Student(id: '3', name: 'Charlie Brown', isPresent: true),
-    Student(id: '4', name: 'Diana Prince', isPresent: false),
-    Student(id: '5', name: 'Ethan Hunt', isPresent: true),
-    Student(id: '6', name: 'Fiona Green', isPresent: false),
-    Student(id: '7', name: 'George Miller', isPresent: true),
-    Student(id: '8', name: 'Hannah Lee', isPresent: false),
+    Student(id: '1', name: 'Rahim', isPresent: true),
+    Student(id: '2', name: 'Bobli', isPresent: false),
+    Student(id: '3', name: 'Chandra', isPresent: true),
+    Student(id: '4', name: 'Diana', isPresent: false),
+    Student(id: '5', name: 'Eshan', isPresent: true),
+    Student(id: '6', name: 'Fiona', isPresent: false),
+    Student(id: '7', name: 'Jeba', isPresent: true),
+    Student(id: '8', name: 'Hannah', isPresent: false),
   ];
 
   // Return a plain copy — safe for UI iteration
