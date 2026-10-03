@@ -58,7 +58,7 @@ extension AttendanceProviderContext on BuildContext {
   }
 }
 
-// ------------------- Student Model -------------------
+
 class Student {
   final String id;
   final String name;
@@ -71,7 +71,7 @@ class Student {
   });
 }
 
-// ------------------- Attendance Provider -------------------
+
 class AttendanceProvider extends ChangeNotifier {
   final List<Student> _students = [
     Student(id: '1', name: 'Rahim', isPresent: true),
@@ -84,7 +84,7 @@ class AttendanceProvider extends ChangeNotifier {
     Student(id: '8', name: 'Hannah', isPresent: false),
   ];
 
-  // Return a plain copy — safe for UI iteration
+
   List<Student> get students => List<Student>.from(_students);
 
   int get totalStudents => _students.length;
@@ -119,7 +119,7 @@ class AttendanceProvider extends ChangeNotifier {
   }
 }
 
-// ------------------- Main App -------------------
+
 void main() {
   runApp(
     ChangeNotifierProvider(
@@ -146,7 +146,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// ------------------- Attendance Screen -------------------
+
 class AttendanceScreen extends StatelessWidget {
   const AttendanceScreen({super.key});
 
@@ -210,7 +210,7 @@ class AttendanceScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          // ---------- Statistics ----------
+         
           Padding(
             padding: const EdgeInsets.all(12.0),
             child: Card(
@@ -244,7 +244,7 @@ class AttendanceScreen extends StatelessWidget {
             ),
           ),
 
-          // ---------- Student List ----------
+          
           Expanded(
             child: students.isEmpty
                 ? const Center(
@@ -347,7 +347,6 @@ class AttendanceScreen extends StatelessWidget {
   }
 }
 
-// ------------------- Stat Item Widget -------------------
 class _StatItem extends StatelessWidget {
   final String label;
   final int value;
